@@ -328,6 +328,9 @@
 
         L.control.layers(baseMaps, overlayMaps).addTo(map);
 
+        // Menambahkan skala
+        L.control.scale().addTo(map);
+
         // Membuat legenda penduduk
         var legendPenduduk = L.control({position: 'bottomright'});
         legendPenduduk.onAdd = function (map) {
